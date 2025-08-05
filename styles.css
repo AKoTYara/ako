@@ -21,8 +21,8 @@ body {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 .box {
-  max-height: 90vh; /* ограничиваем высоту */
-  overflow-y: auto; /* включаем прокрутку если контента много */
+  max-height: 90vh; 
+  overflow-y: auto; 
   padding: 10px;
   border-radius: 10px;
 }
@@ -95,3 +95,4 @@ body {
   height: auto;
   flex-shrink: 0;
 }
+
