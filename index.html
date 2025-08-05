@@ -47,15 +47,15 @@
               />
             </div>
             <div class="slider-labels-custom">
-              <span style="left: 0%">0</span>
-              <span style="left: 10%">30</span>
-              <span style="left: 16.6%">50</span>
-              <span style="left: 23.3%">70</span>
-              <span style="left: 33.3%">100</span>
-              <span style="left: 50%">150</span>
-              <span style="left: 66.6%">200</span>
-              <span style="left: 83.3%">250</span>
-              <span style="left: 99%">300+</span>
+              <span data-val="0" style="left: 0%">0</span>
+              <span data-val="30" style="left: 10%">30</span>
+              <span data-val="50" style="left: 16.6%">50</span>
+              <span data-val="70" style="left: 23.3%">70</span>
+              <span data-val="100" style="left: 33.3%">100</span>
+              <span data-val="150" style="left: 50%">150</span>
+              <span data-val="200" style="left: 66.6%">200</span>
+              <span data-val="250" style="left: 83.3%">250</span>
+              <span data-val="300" style="left: 99%">300+</span>
             </div>
 
           </div>
@@ -153,7 +153,7 @@
     const px = percent * (sliderWidth - thumbOffset * 2) + thumbOffset;
 
     valueLabel.textContent = val;
-    valueLabel.style.left = `${px - 35}px`;
+    valueLabel.style.left = `${px + 35}px`;
   }
 
   slider.addEventListener("input", updateValuePosition);

@@ -212,3 +212,13 @@ html,
 body {
   overflow-x: hidden;
 }
+
+@media (max-width: 800px) {
+  .slider-labels-custom span[data-val="30"],
+  .slider-labels-custom span[data-val="70"],
+  .slider-labels-custom span[data-val="150"],
+  .slider-labels-custom span[data-val="250"],
+  .slider-labels-custom span[data-val="300"] {
+    display: none;
+  }
+}
